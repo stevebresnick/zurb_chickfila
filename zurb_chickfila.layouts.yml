@@ -26,3 +26,23 @@ chick-fil-a:
     bottom_full_width:
       label: Bottom Full Width
   icon: layouts/chick-fil-a/foundation_4col.png
+chick-fil-a-simple:
+  label: '@Chickfila - Simple'
+  category: 'Chick-fil-A'
+  template: chick-fil-a/homepage-simple
+  regions:
+    featured_content:
+      label: Featured Content
+    secondary_content:
+      label: Secondary Content
+    middle:
+      label: Middle
+    bottom_primary_sidebar:
+      label: Bottom Primary Sidebar
+    bottom_featured_content:
+      label: Bottom Feature Content
+    bottom_secondary_sidebar:
+      label: Bottom Secondary Sidebar
+    bottom_full_width:
+      label: Bottom Full Width
+  icon: layouts/chick-fil-a/foundation_4col.png
