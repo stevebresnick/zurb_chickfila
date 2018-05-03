@@ -1,0 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/foundation.css: {}
+      css/lmig-node.css: {}
+      css/lmig-element.css: {}
+      css/lmig.css: {}
+      css/zurb_chickfila.css: {}
+  js:
+    js/zurb_chickfila.js: {}

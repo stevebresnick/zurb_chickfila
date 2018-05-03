@@ -1,0 +1,46 @@
+body {
+  font-family: 'Arvo', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.top-bar {
+  background: white;
+}
+
+.cfa-logo {
+}
+
+.cfa-user-block {
+}
+
+.title-bar {
+  background: #004f70;
+}
+
+.title-bar a {
+  color: #ffffff;
+}
+
+.title-bar a:hover {
+  color: gray;
+}
+
+/*text colors*/
+.cfa-red-text {
+  color: #c0304f;
+}
+
+.cfa-blue-text {
+  color: #09526e;
+}
+
+.node--type-intranet-news.node--view-mode-featured .card__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  border-left: 4px solid #FEAA00;
+  background-color: rgba(192, 48, 79,0.7);
+  color: #FFF;
+}

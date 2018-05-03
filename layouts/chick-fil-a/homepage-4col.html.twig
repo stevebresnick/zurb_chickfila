@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Template for a 4 column panel layout.
+ *
+ * This template provides a four column panel display layout, with
+ * each column equal in width.
+ *
+ * Variables:
+ * - id: An optional CSS id to use for the layout.
+ * - css_classes: Optional CSS classes to use for the layout.
+ * - content: An array of content, each item in the array is keyed to one
+ *   panel of the layout. This layout supports the following sections:
+ *   - content.featured_content: Featured Content.
+ *   - content.secondary_content: Secondary Content.
+ *   - content.middle: Content in the middle.
+ *   - content.my_operations_1: Content in My Operations section.
+ *   - content.my_operations_2: Content in My Operations section.
+ *   - content.my_operations_3: Content in My Operations section.
+ *   - content.my_operations_4: Content in My Operations section.
+ *   - content.bottom_primary_sidebar: Content bottom primary sidebar.
+ *   - content.bottom_featured_content: Featured Content in the bottom.
+ *   - content.bottom_secondary_sidebar: Content bottom secondary sidebar.
+ *   - content.bottom_full_width: Content bottom full width region.
+ */
+#}
+
+<div {{ attributes.setAttribute('id', settings.css_id).addClass(settings.css_classes) }} class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="medium-6 large-8 cell">
+      {{ content.featured_content }}
+    </div>
+    <div class="medium-6 large-4 cell">
+      {{ content.secondary_content }}
+    </div>
+  </div>
+  <div class="large-12 cell">
+      {{ content.middle }}
+  </div>
+  <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-4">
+    <div class="cell">{{content.my_operations_1}}</div>
+    <div class="cell">{{content.my_operations_2}}</div>
+    <div class="cell">{{content.my_operations_3}}</div>
+    <div class="cell">{{content.my_operations_4}}</div>
+  </div>
+  <div class="grid-x grid-margin-x">
+    <div class="medium-6 large-3 cell">
+      {{content.bottom_primary_sidebar}}
+    </div>
+    <div class="medium-6 large-6 cell">
+      {{content.bottom_featured_content}}
+    </div>
+    <div class="medium-6 large-3 cell">
+      {{content.bottom_secondary_sidebar}}
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      {{content.bottom_full_width}}
+    </div>
+  </div>
+</div> <!-- /.foundation-4col -->
